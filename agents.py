@@ -4,7 +4,7 @@ from langchain_community.tools import DuckDuckGoSearchRun
 
 class MedicalAnalysisAgents:
     def __init__(self):
-        self.llm = Ollama(model="mistral")
+        self.llm = Ollama(model="openhermes")
         self.search_tool = DuckDuckGoSearchRun()
 
     def medical_analyst(self):

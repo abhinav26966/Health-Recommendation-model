@@ -53,7 +53,8 @@ def main():
             crew = Crew(
                 agents=agents,
                 tasks=tasks,
-                process=Process.sequential
+                process=Process.sequential,
+                context="Use the results from the previous task as input for the next task."
             )
 
             with st.spinner("..."):
